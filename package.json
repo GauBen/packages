@@ -1,0 +1,9 @@
+{
+  "name": "@gauben/packages",
+  "packageManager": "yarn@3.2.2",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ]
+}
