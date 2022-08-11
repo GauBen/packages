@@ -22,7 +22,7 @@ let i = dichotomid((i) => fs.existsSync(`file${i}`));
 console.log(`file${i} is the first free`);
 ```
 
-Dichotomid relies on dichotomy to find the first free id in the least amount of tests. Indeed, if `file1` to `file999` are all taken, it would take 1000 `existsSync` calls to figure it out naively. **Dichotomid will find the value in 30 call.**
+Dichotomid relies on binary search to find the first free id in the least amount of tests. Indeed, if `file1` to `file999` are all taken, it would take 1000 `existsSync` calls to figure it out naively. **Dichotomid will find the value in 30 call.**
 
 ```js
 import { dichotomid } from "dichotomid";
