@@ -78,4 +78,17 @@ describe("pojo-tree", () => {
       { id: 1, parentId: null },
     ]);
   });
+
+  it("should work with custom key", () => {
+    const tree = createTree(
+      [
+        { id: 3, x: 1 },
+        { id: 1, x: null },
+      ],
+      "x"
+    );
+    assert.deepStrictEqual(tree, [
+      { id: 1, x: null, children: [{ id: 3, x: 1, children: [] }] },
+    ]);
+  });
 });
