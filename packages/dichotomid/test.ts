@@ -1,5 +1,6 @@
 import { strict as assert } from "node:assert";
 import { describe, it } from "node:test";
+import { setTimeout } from "node:timers/promises";
 import { dichotomid } from "./index.js";
 
 describe("dichotomid", () => {
@@ -39,10 +40,10 @@ describe("dichotomid", () => {
     }
   });
 
-  it("should throw if the validator never returns true", () => {
+  it("should throw if the validator never returns true", async () => {
     // Sync version
     assert.throws(() => dichotomid(() => false));
     // Async version
-    assert.rejects(dichotomid(() => Promise.resolve(false)));
+    await assert.rejects(dichotomid(() => Promise.resolve(false)));
   });
 });
