@@ -10,7 +10,7 @@ export function analyze(template: string): string[] {
 
 export function sub$(template: string, values: Record<string, string>): string {
   return template.replace(regex, (match, dollars, key) => {
-    if (!(key in values)) return match;
+    if (!Object.hasOwn(values, key)) return match;
     if (dollars.length % 2)
       return "$".repeat((dollars.length - 1) / 2) + values[key];
     return "$".repeat(dollars.length / 2) + key;
