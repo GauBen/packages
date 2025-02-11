@@ -1,6 +1,5 @@
 import { strict as assert } from "node:assert";
 import { describe, it } from "node:test";
-import { setTimeout } from "node:timers/promises";
 import { dichotomid } from "./index.js";
 
 describe("dichotomid", () => {

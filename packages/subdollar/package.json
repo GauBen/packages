@@ -1,6 +1,5 @@
 {
-  "name": "pojo-tree",
-  "description": "Various methods to work with pojo-based trees.",
+  "name": "subdollar",
   "version": "0.0.1",
   "author": "Gautier Ben Aïm <https://github.com/GauBen>",
   "bugs": {
@@ -17,19 +16,11 @@
     "build/index.js",
     "build/index.d.ts"
   ],
-  "homepage": "https://github.com/GauBen/packages/tree/main/packages/pojo-tree",
-  "keywords": [],
   "license": "MIT",
   "main": "./build/index.js",
-  "packageManager": "yarn@3.2.2",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/GauBen/packages.git",
-    "directory": "packages/pojo-tree"
-  },
   "scripts": {
     "build": "tsc",
-    "test": "c8 ts-node-esm ./test.ts"
+    "test": "c8 node ./test.ts"
   },
   "type": "module",
   "types": "./build/index.d.ts"
