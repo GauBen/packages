@@ -1,27 +1,28 @@
 {
   "name": "subdollar",
   "version": "0.0.1",
-  "author": "Gautier Ben Aïm <https://github.com/GauBen>",
+  "private": true,
   "bugs": {
     "url": "https://github.com/GauBen/packages/issues"
+  },
+  "license": "MIT",
+  "author": "Gautier Ben Aïm <https://github.com/GauBen>",
+  "type": "module",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "README.md",
+    "build/index.js",
+    "build/index.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "c8 node ./test.ts"
   },
   "devDependencies": {
     "@types/node": "^22.13.1",
     "c8": "^10.1.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
-  },
-  "files": [
-    "README.md",
-    "build/index.js",
-    "build/index.d.ts"
-  ],
-  "license": "MIT",
-  "main": "./build/index.js",
-  "scripts": {
-    "build": "tsc",
-    "test": "c8 node ./test.ts"
-  },
-  "type": "module",
-  "types": "./build/index.d.ts"
+  }
 }

@@ -1,41 +1,40 @@
 {
   "name": "dichotomid",
-  "description": "Dichotomid helps you find the first free id of something, efficiently.",
   "version": "0.0.3",
-  "author": "Gautier Ben Aïm <https://github.com/GauBen>",
-  "bugs": {
-    "url": "https://github.com/GauBen/packages/issues"
-  },
-  "devDependencies": {
-    "@types/node": "^22.13.1",
-    "c8": "^10.1.3",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.7.3"
-  },
-  "files": [
-    "README.md",
-    "build/index.js",
-    "build/index.d.ts"
-  ],
-  "homepage": "https://github.com/GauBen/packages/tree/main/packages/dichotomid",
+  "description": "Dichotomid helps you find the first free id of something, efficiently.",
   "keywords": [
     "binary search",
     "first available",
     "first free",
     "optimized"
   ],
-  "license": "MIT",
-  "main": "./build/index.js",
-  "packageManager": "yarn@3.2.2",
+  "homepage": "https://github.com/GauBen/packages/tree/main/packages/dichotomid",
+  "bugs": {
+    "url": "https://github.com/GauBen/packages/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/GauBen/packages.git",
     "directory": "packages/dichotomid"
   },
+  "license": "MIT",
+  "author": "Gautier Ben Aïm <https://github.com/GauBen>",
+  "type": "module",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "README.md",
+    "build/index.js",
+    "build/index.d.ts"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "c8 ts-node-esm ./test.ts"
   },
-  "type": "module",
-  "types": "./build/index.d.ts"
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "c8": "^10.1.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
 }
