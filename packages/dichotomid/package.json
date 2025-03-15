@@ -1,6 +1,6 @@
 {
   "name": "dichotomid",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Dichotomid helps you find the first free id of something, efficiently.",
   "keywords": [
     "binary search",
