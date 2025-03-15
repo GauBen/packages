@@ -1,6 +1,6 @@
 import { strict as assert } from "node:assert";
 import { describe, it } from "node:test";
-import { dichotomid } from "./index.js";
+import { dichotomid } from "./index.ts";
 
 describe("dichotomid", () => {
   it("should synchronously return the first available id", () => {
@@ -21,7 +21,7 @@ describe("dichotomid", () => {
     const estimate = (n: number) => 2 * Math.ceil(Math.log2(n));
     {
       let op = 0;
-      let validator = (n: number) => {
+      const validator = (n: number) => {
         op++;
         return n >= 1000;
       };
@@ -30,7 +30,7 @@ describe("dichotomid", () => {
     }
     {
       let op = 0;
-      let validator = (n: number) => {
+      const validator = (n: number) => {
         op++;
         return n >= 1_000_000_000;
       };
