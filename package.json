@@ -8,5 +8,8 @@
   "scripts": {
     "build": "yarn workspaces foreach --all --topological-dev run build"
   },
+  "devDependencies": {
+    "@chachalog/types": "^0.1.0"
+  },
   "packageManager": "yarn@4.7.0"
 }
