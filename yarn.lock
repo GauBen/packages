@@ -56,10 +56,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chachalog/types@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "@chachalog/types@npm:0.1.0"
-  checksum: 10c0/ecdca6598a8e76f8edb79ae5e1e15af4316661cd5076326e2335c30a764923d867049ee70339be40f19bdd7d58f6a9229298fde800ef4bbae2ab9364fcaf1582
+"@chachalog/types@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@chachalog/types@npm:0.3.0"
+  checksum: 10c0/91a18060a43a024d346eff2e9171896d1bb9b40323108cd9742247c9d2c04d656ccd3eacbd1025f61bc8d7899a788f4e0152dc4780dde74609c9caffe5a89dd4
   languageName: node
   linkType: hard
 
@@ -76,7 +76,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@gauben/packages@workspace:."
   dependencies:
-    "@chachalog/types": "npm:^0.1.0"
+    "@chachalog/types": "npm:^0.3.0"
   languageName: unknown
   linkType: soft
 

@@ -4,7 +4,7 @@ import { defineConfig } from "chachalog";
 import github from "chachalog/github";
 import yarn from "chachalog/yarn";
 
-export default defineConfig({
+export default defineConfig(() => ({
   platform: github(),
   managers: yarn(),
-});
+}));
